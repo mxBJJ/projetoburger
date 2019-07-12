@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Importa��o do normalize css para arrumar bugs -->
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+    <!-- Importa��o do sistema de grid -->
+    <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+    <!-- Importa��o do nossa folha de estilo -->
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <!-- Meta tag viewport, que � importante quando desenvolvemos sites responsivos, 
+        pois previne que os smartphones d�em zoom out na p�gina, ou seja, 
+        sempre iniciar com escala 1.0 -->
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+
+    <!-- Importa��o do nossa folha de estilo de media queries -->
+    <link rel="stylesheet" type="text/css" href="resources/css/media.css">
+    <!-- Importa��o dos icones -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
+    <!-- Importa��o da fonte Lato -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&amp;subset=latin-ext" rel="stylesheet">
+    <title>Saúde no Burger</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="row">
+                <img src="resources/img/logo-white.png" alt="saúde no burger logo" class="logo">
+                <ul class="main-nav">
+                    <li><a href="#">Tele-entrega</a></li>
+                    <li><a href="#">Funcionamento</a></li>
+                    <li><a href="#">Cidades atendidas</a></li>
+                    <li><a href="#">Inscrever-se</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="hero-text-box">
+            <h1>Adeus fast food do mal. <br> Nós oferecemos um fast food do bem.</h1>
+            <a class="btn btn-full" href="#">Comprar agora</a>
+            <a class="btn btn-ghost" href="#">Mais informações</a>
+        </div>
+    </header>
+    <section class="section-features js--section-features">
+        <div class="row">
+            <h2>Solução rápida e mais saudavel &mdash; não apenas rápida.</h2>
+            <p class="long-copy">
+                Nós da saúde no burger queremos prover a você uma experiência incrivelmente deliciosa e mais saudável.
+                Pois entendemos que nem todo mundo tem tempo suficiente ou interesse em cozinhar, mas não é por isso que
+                as pessoas devem deixar de se alimentar bem.
+            </p>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-4 box">
+                <ion-icon name="infinite"></ion-icon>
+                <h3>Aberto 365 dias</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat malesuada massa non
+                    porttitor. Vivamus tristique laoreet lorem, at maximus ante ultrices vel.</p>
+            </div>
+            <div class="col span-1-of-4 box">
+                <ion-icon name="stopwatch"></ion-icon>
+                <h3>Pronto em 15 min.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat malesuada massa non
+                    porttitor. Vivamus tristique laoreet lorem, at maximus ante ultrices vel.</p>
+            </div>
+            <div class="col span-1-of-4 box">
+                <ion-icon name="nutrition"></ion-icon>
+                <h3>100% organico</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat malesuada massa non
+                    porttitor. Vivamus tristique laoreet lorem, at maximus ante ultrices vel.</p>
+            </div>
+            <div class="col span-1-of-4 box">
+                <ion-icon name="card"></ion-icon>
+                <h3>Aceitamos cartões</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat malesuada massa non
+                    porttitor. Vivamus tristique laoreet lorem, at maximus ante ultrices vel.</p>
+            </div>
+        </div>
+    </section>
+    <section class="section-photos">
+        <ul class="images-showcase clearfix">
+            <li>
+                <figure class="photo">
+                    <img src="resources/img/1.jpg" alt="texto do documento" title="texto do documento" />
+                </figure>
+            </li>
+            <li>
+                <figure class="photo">
+                    <img src="resources/img/2.jpg" alt="texto do documento" title="texto do documento" />
+                </figure>
+            </li>
+            <li>
+                <figure class="photo">
+                    <img src="resources/img/3.jpg" alt="texto do documento" title="texto do documento" />
+                </figure>
+            </li>
+            <li>
+                <figure class="photo">
+                    <img src="resources/img/4.jfif" alt="texto do documento" title="texto do documento" />
+                </figure>
+            </li>
+        </ul>
+        <ul class="images-showcase clearfix">
+            <li>
+                <figure class="photo">
+                    <img src="resources/img/5.png" alt="texto do documento" title="texto do documento" />
+                </figure>
+            </li>
+            <li>
+                <figure class="photo">
+                    <img src="resources/img/6.jpg" alt="texto do documento" title="texto do documento" />
+                </figure>
+            </li>
+            <li>
+                <figure class="photo">
+                    <img src="resources/img/7.jpg" alt="texto do documento" title="texto do documento" />
+                </figure>
+            </li>
+            <li>
+                <figure class="photo">
+                    <img src="resources/img/8.jpg" alt="texto do documento" title="texto do documento" />
+                </figure>
+            </li>
+        </ul>
+    </section>
+
+    <!--Abrindo a se��o steps (passos) -->
+    <section class="section-steps">
+        <!--Abrindo a div com a classe ROW para criar um container centralizado,
+        ser� usando para colocar nosso t�tulo  -->
+        <div class="row">
+            <!--T�tulo da se��o -->
+            <h2>Esperando o quê? &mdash; Bastam 3 passos</h2>
+            <!--Fechando a div ROW -->
+        </div>
+        <!--Fechando a se��o steps (passos) -->
+        <!-- Abrindo a div com a classe ROW para criar um container centralizado,
+            ser� usando para colocar 2 colunas  -->
+        <div class="row">
+            <!-- Conte�do da coluna da esquerda -->
+            <div class="col span-1-of-2 steps-box">
+                <img src="resources/img/app-screen.png" alt="Seu pedido pelo iPhone" class="app-screen">
+            </div>
+
+            <!-- Conte�do da coluna da direita -->
+            <div class="col span-1-of-2 steps-box">
+                <div class="step">
+                    <div>1</div>
+                    <p>Selecione qual plano melhor se encaixa no seu bolso!</p>
+                </div>
+                <div class="step">
+                    <div>2</div>
+                    <p>Escolha uma refeição deliciosa e super saudável!</p>
+                </div>
+                <div class="step">
+                    <div>3</div>
+                    <p>Aguarde apenas 15 minutos e receba a <br /> refeição escolhida na porta da sua casa!</p>
+                </div>
+
+                <a href="#" class="btn-app"><img src="resources/img/download-app-ios.svg" alt="Bot�o App Store"></a>
+                <a href="#" class="btn-app"><img src="resources/img/download-app-android.png"
+                        alt="Bot�o Play Store"></a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section-cities">
+        <div class="row">
+            <h2>Estamos atendendo nas seguintes cidades</h2>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-4 box">
+                <img src="resources/img/poa.jpg" alt="Porto Alegre" />
+                <h3>Porto Alegre</h3>
+                <div class="city-feature">
+                    <i class="fas fa-street-view icon-small"></i>
+                    Av. Ipiranga, 999
+                </div>
+                <div class="city-feature">
+                    <i class="fas fa-carrot icon-small"></i>
+                    20 opções de pratos
+                </div>
+                <div class="city-feature">
+                    <i class="fab fa-facebook icon-small"></i>
+                    <a href="#">@saudenoburger_poa</a>
+                </div>
+            </div>
+            <div class="col span-1-of-4 box">
+                <img src="resources/img/pf.jpg" alt="Passo Fundo" />
+                <h3>Passo Fundo</h3>
+                <div class="city-feature">
+                    <i class="fas fa-street-view icon-small"></i>
+                    Av. Brasil, 888
+                </div>
+                <div class="city-feature">
+                    <i class="fas fa-carrot icon-small"></i>
+                    30 opções de pratos
+                </div>
+                <div class="city-feature">
+                    <i class="fab fa-instagram icon-small"></i>
+                    <a href="#">@saudenoburger_pf</a>
+                </div>
+            </div>
+            <div class="col span-1-of-4 box">
+                <img src="resources/img/alg.jpg" alt="Alegrete" />
+                <h3>Alegrete</h3>
+                <div class="city-feature">
+                    <i class="fas fa-street-view icon-small"></i>
+                    Av. Carlos Gomes, 777
+                </div>
+                <div class="city-feature">
+                    <i class="fas fa-carrot icon-small"></i>
+                    25 opções de pratos
+                </div>
+                <div class="city-feature">
+                    <i class="fab fa-facebook icon-small"></i>
+                    <a href="#">@saudenoburger_alg</a>
+                </div>
+            </div>
+            <div class="col span-1-of-4 box">
+                <img src="resources/img/sl.jpg" alt="S�o Leopoldo" />
+                <h3>São Leopoldo</h3>
+                <div class="city-feature">
+                    <i class="fas fa-street-view icon-small"></i>
+                    Rua Das Flores, 666
+                </div>
+                <div class="city-feature">
+                    <i class="fas fa-carrot icon-small"></i>
+                    10 opções de pratos
+                </div>
+                <div class="city-feature">
+                    <i class="fab fa-twitter icon-small"></i>
+                    <a href="#">@saudenoburger_sl</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-testimonials">
+        <div class="row">
+            <!-- Aqui ir� o t�tulo da primeira div -->
+            <h2>Melhorando a qualidade de vida das pessoas</h2>
+        </div>
+        <div class="row">
+            <!-- Aqui ir� o conte�do da segunda div, organizado em 3 colunas -->
+            <div class="col span-1-of-3">
+                <!--Primeira coluna -->
+                <blockquote>
+                    Saúde no burger é incrível! Eu sou uma pessoa super ocupada, com pouco tempo para cuidar da minha
+                    alimentação, mas tudo mudou com a equipe da saúde no burger que assumiu essa função.
+                    <cite>
+                        <img src="resources/img/customer-1.jpg" />Alberto Saltonetto
+                    </cite>
+                </blockquote>
+            </div>
+            <div class="col span-1-of-3">
+                <!--Segunda coluna -->
+                <blockquote>
+                    Comida saudável rapidinho na porta da sua casa! A melhor opção para mim e para vc... principalmente
+                    para mim que odeio cozinhar e que já perdi três casas após incendia-las tentando cozinhar.
+                    <cite>
+                        <img src="resources/img/customer-2.jpg" />Joicelaine Carneiro
+                    </cite>
+                </blockquote>
+            </div>
+            <div class="col span-1-of-3">
+                <!--Terceira coluna -->
+                <blockquote>
+                    Eu estava procurando por uma alimentação saudável e que coubesse no meu bolso e encontrei... Saúde
+                    no Burger, melhor custo-benefício ever! Muito mais que alvace, eles tem rúcula e repolho também!
+                    <cite>
+                        <img src="resources/img/customer-3.jpg" />Pedro Antunes
+                    </cite>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="row">
+            <div class="col span-1-of-2">
+                <ul class="footer-nav">
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Nosso Blog</a></li>
+                    <li><a href="#">Receitas</a></li>
+                    <li><a href="#">App iOS</a></li>
+                    <li><a href="#">App Android</a></li>
+                </ul>
+            </div>
+            <div class="col span-1-of-2">
+                <ul class="social-links">
+                    <li><a href="#">
+                            <ion-icon class="logo-instagram" name="logo-instagram"></ion-icon>
+                        </a></li>
+                    <li><a href="#">
+                            <ion-icon class="logo-facebook" name="logo-facebook"></ion-icon>
+                        </a></li>
+                    <li><a href="#">
+                            <ion-icon class="logo-googleplus" name="logo-googleplus"></ion-icon>
+                        </a></li>
+                    <li><a href="#">
+                            <ion-icon class="logo-twitter" name="logo-twitter"></ion-icon>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <p>Copyright &copy; 2019 Saúde no Burger. Todos os direitos reservados.</p>
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/cross-domain/respond.proxy.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/selectivizr2@1.0.9/selectivizr2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+
+    <script src="resources/js/script.js"></script>
+
+</body>
+
+</html>
+<script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>

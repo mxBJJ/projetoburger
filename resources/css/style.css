@@ -1,0 +1,503 @@
+/* ----------------------------------------------- */
+/* Configura��es B�sicas */
+/* ----------------------------------------------- */
+
+/*Zerando bordas para ter maior dom�nio sobre os box*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff; /*Define a cor do fundo*/
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif; /*a terceira op��o � qualquer fonte daquela fam�lia, note que o nome da fam�lia n�o esta entre aspas.*/
+    font-weight: 300; /*de acordo com a fonte que importamos*/
+    font-size: 20px;
+    text-rendering: optimizeLegibility; /*otimiza a renderiza��o da fonte para letura, tendo uma melhor qualidade*/
+}
+
+/*Configurando minha linha do sistema de grid*/
+.row {
+    max-width: 1140px; /*Define o tamanho m�ximo da linha*/
+    margin: 0 auto 0 auto; /*Define que o container vai ficar centralizado*/
+    /*margin: 0 auto; maneira alternativa para a linha de cima*/
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/nome_img_hero.jpg); /*explore outras cores e transpar�ncias*/
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+
+h1, h2, h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center; /*Centralizando o texto*/
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " "; /*Conte�do do item*/
+    width: 100px; /*Comprimento do item*/
+    margin: 0 auto; /*Centralizar*/
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+.long-copy {
+    line-height:145%;
+    width: 70%; /*ocupa 70%, sobra 30%*/
+    margin-left: 15%; /*15% para cada lado*/
+}
+
+.box {
+    padding: 1%;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+ion-icon {
+    font-size: 350%; /*Tamanho do �cone*/
+    display: block;
+    color: #e67e22; /*cor da fonte = cor do �cone*/
+    margin-bottom: 10px; /*espa�o entre o �cone e o t�tulo do feature*/
+    font-weight: 300;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    color: #fff;
+    transition: background-color 0.2s, border 0.2s, color 0.2s; /*a transi��o da cor do fundo, da borda e da fonte deve demorar 0.2 segundos*/
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+    margin-right: 15px; /*espa�amento entre os bt�es*/
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #e67e22;
+    color: #e67e22;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #cf6d17;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #cf6d17;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #cf6d17;
+    color: #fff;
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px; /*colocar um espa�amento acima da logo para baixar ela*/
+}
+
+.main-nav {
+    float: right;
+    list-style: none; /*Se livra dos bullets - bolinhas pretas - marcadores*/
+    margin-top: 55px; /*colocar um espa�amento acima da lista para baixar ela*/
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px; /*espa�amento entre os items da lista*/
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #e67e22;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.section-features .long-copy {
+    margin-bottom: 30px;
+}
+
+.images-showcase {
+    list-style: none; /*Retira marcadores*/
+    width: 100%; /*Ocupa toda largura da tela*/
+}
+
+.images-showcase li{
+    display: block; /*permite outros elementos ao lado*/
+    float: left; /*Faz com que os elementos sejam colocados lado a lado*/
+    width: 25%; /*cada item/imagem ter� 25% de largura em rela��o a tela... 100/4*/
+}
+
+.photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000; /*Cor de fundo - preto*/
+}
+
+.photo img {
+    opacity: 0.7; /*deixa a imagem um pouco transparente*/
+    width: 100%;
+    height: auto; /*para n�o desfigurar a imagem*/
+    transform: scale(1.15); /*imagem aumentada em 15%*/
+    transition: transform 0.5s, opacity 0.5s; /*Adiciona um per�odo de transi��o quando houver altera��o na propriedade transform ou opacity*/
+}
+
+.photo img:hover {
+    opacity:1;
+    transform: scale(1.03); /*escala da imagem com valor padr�o*/
+}
+
+
+.section-photos {
+    padding: 0;
+}
+
+/* ----------------------------------------------- */
+/* Se��o Lista de Passos (Section Steps) */
+/* ----------------------------------------------- */
+
+.steps-box:first-child {
+    margin-top: 30px;
+    text-align: right; /*textos ou conte�dos do tipo inline (ex. img) alinhados � direita*/
+    padding-right: 3%; /*usamos porcentagem para ser responsivo*/
+}
+
+.steps-box:last-child {
+    text-align: left;
+    padding-left: 3%; /*usamos porcentagem para ser responsivo*/
+    margin-top: 70px;
+}
+
+.app-screen {
+    width: 40%; /*40% do tamanho do box/container*/
+}
+
+.step {
+    margin-bottom: 50px;
+}
+
+/*Aumentanto apenas o espa�amento do ultimo passo, igual ao last-child*/
+.step:last-of-type {
+    margin-bottom: 80px;
+}
+
+/*Vamos criar uma regra para o elemento div dentro da classe step*/
+.step div {
+    color: #e67e22; /*Define cor da fonte*/
+    border: 2px solid #e67e22; /*define uma borda laranja*/
+    display: inline-block;/*para permitir containers lado a lado*/
+    /*posterior*/
+    border-radius: 50%; /*Arredonda as bordas*/
+    height: 55px;/*Define altura*/
+    width: 55px;/*Mesmo valor da altura, afinal queremos um circulo*/
+    /*Ajustando o texto interno*/
+    text-align: center;/*Texto centralizado na horizontal, n�o na vertical*/
+    padding: 5px;/*espa�o entre texto e borda do container*/
+    float: left;
+    font-size: 150%;
+    margin-right: 25px;/*espa�o entre essa div e o paragr�fo - talvez varie de acordo com o tamanho dos paragr�fos*/
+}
+
+/*A �ltima coisa � formatar o tamanho dos bot�es... a imagem dentro do bot�o*/
+.btn-app img {
+    height:50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.clearfix {
+zoom:1;
+}
+
+.clearfix:after {
+    content: '-';
+    clear: both;
+    display: block;
+    height:0;
+    visibility:hidden;
+}
+
+.section-steps {
+    background-color: #f4f4f4;
+}
+
+/* ----------------------------------------------- */
+/* Se��o Cidades (Section Cities) */
+/* ----------------------------------------------- */
+
+/*Vamos come�ar pelas imagens*/
+.box img {
+    width: 100%; /*100% a largura do container*/
+    height: auto; /*ajusta o valor da altura de acordo com a largura (width)*/
+    margin-bottom: 15px; /*d� um espa�amento entre a imagem e o nome da cidade*/
+}
+
+
+.city-feature {
+    margin-bottom: 5px; /*d� um espa�amento vertical entre cada feature*/
+}
+
+/*Quero que eles fiquem alinhados*/
+.icon-small {
+    display: inline-block; /*Permite definir with*/
+    width: 30px; /**/
+    text-align: center; /*Centraliza o icone dentro desse inline-block com 30px de largura*/
+    color: #e67e22; /*Define a cor do icone*/
+    font-size: 120%; /*Define tamanho do �cone*/
+    margin-right: 10px; /*Coloca um espa�amento entre o �cone e o texto*/
+    /*Alinhando icones com o texto - horizontal*/
+    /*Segredo para alinhar texto e �cones s�o as 3 linhas aseguir*/
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -4px;
+}
+
+/*Formatando o link*/
+a:link, a:visited {
+    color: #e67e22; /*Define a cor da fonte do link*/
+    text-decoration: none;
+    padding-bottom: 1px; /*Adiciona um espacinho entre o texto do link e a borda de baixo*/
+    border-bottom: 1px solid #e67e22; /*Adiciona uma borda colorida abaixo do link*/
+    /*Por �ltimo, Vamos Adicionar uma transi��o para aparecer a borda e para ela ser colorida*/
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover, a:active {
+    color: #e67e22; /*Define a cor da fonte do link*/
+    text-decoration: none;
+    padding-bottom: 1px; /*Adiciona um espacinho entre o texto do link e a borda de baixo*/
+    border-bottom: 1px solid transparent; /*Adiciona uma borda transparente abaixo do link*/
+}
+
+.btn-app:link,
+.btn-app:visited {
+    border: 0px;
+}
+
+
+/* ----------------------------------------------- */
+/* Se��o Testemunhos (Section Testimonials) */
+/* ----------------------------------------------- */
+/*Adicionando imagem de fundo na se��o*/
+.section-testimonials {
+    /*background-image: url(img/background-customers.jpg);*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/background-customers.jpg);
+    background-size: cover; /*preencher toda a largura da janela do navegador*/
+    color: #fff; /*cor da fonte*/
+    background-attachment: fixed;
+}
+
+blockquote {
+    padding: 2%;
+    font-style: italic; /*Deve ser importado a vers�o "italic" da fonte para poder usar*/
+    line-height: 145%; /*Altura da linha do texto*/
+}
+
+blockquote::before {
+    content: "\201C";
+    font-size: 400%;
+
+}
+
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display:block;
+}
+
+cite img {
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align:middle;
+}
+
+
+/* ----------------------------------------------- */
+/* FOOTER */
+/* ----------------------------------------------- */
+
+footer {
+    background-color: rgb(20, 20, 20);
+    padding: 50px;
+    font-size: 80%;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 50%;
+}
+
+.logo-facebook,
+.logo-googleplus,
+.logo-twitter,
+.logo-instagram {
+    transition: color 0.2s;
+}
+
+.logo-facebook:hover {
+    color: #3b5998;
+}
+
+.logo-twitter:hover {
+    color: #00aced;
+}
+
+.logo-googleplus:hover {
+    color: #dd4b39;
+}
+
+.logo-instagram:hover {
+    color: #517fa4;
+}
+
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*Defini��o do meu menu sticky*/
+
+.sticky{
+    /*Posicao vai ser fixa*/
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    /*Adiciona efeito de sombra em um elemento*/
+    box-shadow: 0 2px 2px #efefef;
+
+    z-index: 9999;
+
+}
+
+.sticky .main-nav {
+    margin-top: 18px; 
+    /*colocar um espa�amento acima da lista para baixar ela*/
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 17px 0;
+    color: #555;
+}
+
+.sticky .logo{
+    height: 50px;
+    margin: 5px 0; 
+}
+
+
+
+
+
+
+
+

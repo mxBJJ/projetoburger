@@ -1,0 +1,133 @@
+/*O valor dessa query de ser o mesmo valor da propriedade de largura máxima (width) 
+da classe ROW que definimos no style.css.*/
+/*Lembrando que a esse valor deveria ter sido definido com base na tela da sua estação de trabalho (workstation)*/
+@media only screen and (max-width: 1000px){
+	.hero-text-box {
+	    /*vamos sobrescrever o valor dessa propriedade*/
+	    /*Não queremos mais um valor fixo, queremos que seja 100% da largura da linha (_row_) definido anteriormente*/
+	    width: 100%; 
+	   /*vamos colocar um espaçamento mínimo entre o texto e a borda do navegador*/
+	   padding: 0 2%; /*topo e bottom = 0 | rgiht e left = 2%*/
+	}
+
+	.row{
+		/*vamos colocar um espaçamento mínimo entre as laterais da linha (row) e a borda do navegador*/
+		padding: 0 2%;/*topo e bottom = 0 | right e left = 2%*/
+	}
+
+}
+
+@media only screen and (max-width: 800px){
+	html{font-size: 18px;} 
+	/*Define o tamanho de fonte padrão para esse 
+	tamanho de tela*/
+	section {padding: 60px 0;} 
+	/*Define um novo valor de espaçamento top e 
+	bottom entre as seções para esse tamanho de 
+	tela*/
+	
+	.long-copy{
+		/*ocupa 80%, sobra 20%*/
+		width: 80%; 
+		/*10% para cada lado*/
+    	margin-left: 10%; 
+	}
+
+	.steps-box{
+		margin-top: 10px;
+	}
+
+	.steps-box:last-child {
+	    margin-top: 10px;
+	}
+
+	.step{
+		margin-bottom: 40px;
+	}
+
+	.step:last-of-type {
+    	margin-bottom: 60px;
+	}
+
+	.app-screen{
+		width: 50%;
+	}
+
+	.icon-small{
+		width: 20px;
+		margin-right: 5px;
+	}
+
+	.city-feature{
+		font-size: 85%;
+	}
+
+}
+
+@media only screen and (max-width: 760px){
+
+	html{
+		font-size: 16px;
+	}
+	
+	section{
+		padding: 30px 0;
+	}
+
+	.row,
+	.hero-text-box {
+		/*vamos colocar um espaçamento mínimo entre as laterais da linha (row) e a borda do navegador*/
+		padding: 0 4%;/*topo e bottom = 0 | right e left = 2%*/
+	}
+
+	.col{
+		width: 100%;
+		margin: 0 0 4% 0;
+	}
+
+	.main-nav{
+		display: none;
+	}
+
+	h1{
+		font-size: 180%
+	}
+
+	h2{
+		font-size: 150%
+	}
+
+	.long-copy{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+
+	.steps-box:first-child{
+		text-align: center;
+	}
+
+	.step{
+		margin-bottom: 20px;
+	}
+
+	.step:last-of-type {
+    	margin-bottom: 20px;
+	}
+
+	.app-screen{
+		width: 30%;
+	}
+
+	.step div {
+	    height: 40px;/*Define altura*/
+	    width: 40px;/*Mesmo valor da altura, afinal queremos um circulo*/
+		padding: 4px;/*espaço entre texto e borda do container*/
+	    font-size: 120%;
+	    margin-right: 15px;/*espaço entre essa div e o paragráfo - talvez varie de acordo com o tamanho dos paragráfos*/
+	}
+
+}
+
+
+
